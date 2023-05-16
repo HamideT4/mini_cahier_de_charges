@@ -1,0 +1,291 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}
+\usepackage{xcolor}
+\usepackage{graphicx}
+%\usepackage{float}
+\usepackage{capt-of}
+
+
+\title {\textcolor{cyan}{\textbf{CAHIER DES CHARGES DU PROJET DE E-BOUTIQUE}}}
+\author{HAMIDE MAHAMAT}
+
+%\addto\captionsfrench{
+ % \renewcommand{\partname}{Chapitre}
+ % \renewcommand{\thepart}{\Roman{part}}
+%}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\begin{abstract}
+Vue la diversité des ressources de la gestion des boutiques, l’évolution des méthodes de traitement des informations est devenue, de plus en plus, un besoin fondamental et indispensable.
+\newline La stratégie de mettre en place un système d’informations, aura comme but d’assurer l’accélération et la précision lors du traitement des informations en garantissant un niveau de
+sécurité et stabilité afin de faciliter les tâches de gestion et les rendre plus efficaces.
+\newline Dans ce cadre, nous aspirons à automatiser les activités des boutiques en exprimant leurs différents besoins. À ce niveau, la gestion du personnel, des ventes, du stock, des dettes et des congés sont les besoins prioritaires ciblés, vue l’importance de quantités d’informations à traiter dans l’absence d’un vrai système de gestion.
+\newline Le système d’information à réaliser pour assurer la gestion des boutiques, doit diminuer la quantité des charges du travail aux responsables du service personnel et faciliter l’échange des
+informations entre les différents employés, cette stratégie doit aussi automatiser et accélérer la réalisation des tâches au sein de la boutique.
+\newline Dans ce contexte, et pour la réalisation de notre projet, on a pris en charge de concevoir et réaliser une application permettant de faciliter la gestion des boutiques.
+\newline
+\newline Pour le faire, le travail doit être réalisé en deux parties ; une première partie théorique qui englobe l’étude, l’analyse et la conception du projet. Et une deuxième partie pratique qui vise à la réalisation concrète du projet. Ces deux parties seront préparées sur quatre points :
+\begin{itemize}
+  \item \textbf{Point 1}: Etude de faisabilité 
+  \newline Il consiste, principalement, de présenter le contexte du projet, ses objectifs ainsi que le périmètre du projet.
+  
+  \item \textbf{Point 2}: Spécification des bésons
+  \newline Dans cette partie, on se concentre sur la définition des différents types des besoins : fonctionnels et non fonctionnels (dites techniques), et l’extraction des différents futurs utilisateurs du système, pour arriver enfin à mettre une vue sur l’utilisation générale du système.
+  \item \textbf{Point 3}: Conception
+  \newline Dans ce chapitre, on va mettre en évidence une étude conceptuelle pour l’application tout en se basant sur le langage de modélisation unifié UML.
+  \item \textbf{Point 4}: Mise ne oeuvre et réalisation
+  \newline Ce dernière partie servira à présenter le travail réalisé, et les difficultés rencontrées.
+ \end{itemize} 
+ 
+ À la fin, on doit réaliser une conclusion générale qui résume le travail réalisé, et apprécie les
+compétences acquises durant cette expérience.
+
+\end{abstract}
+
+\newpage
+\pagenumbering{arabic}
+\section{Etude de faisabilité}
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+  Dans cette partie, nous allons présenter le contexte du projet, ses objectifs ainsi que son périmètre.
+\subsection{Contexte du projet}
+La réalisation de l'application web e-boutique se base sur la défaillance du système de gestion existant.
+\newline Parmi ces defaillances: 
+\begin{itemize}
+  \item La majorité des ressources d'information sont sous forme de supports papier, d'où la difficulté dans le classement, l'archivage et le suivi;
+  \item Difficulté du traitement à jours des documents, vue la difficulté de l’adaptation des support papiers;
+  \item Difficultés de retrouver des données anciennes en un temps réduit;
+  \item La charge du travail très importante vue l’absence d’un vrai système qui centralise les informations.
+ \end{itemize} 
+Au vue de toutes ses difficultés, l'application e-boutique s'inscrit comme une solution pour l'optimisation de la gestion de la boutique.
+
+\subsection{Objectifs du projet}
+Afin de remédier à tous ces problèmes, les objectifs visés par le projet sont :
+\begin{itemize}
+  \item Une gestion optimale des employés, leurs durées de travail ainsi que leurs congés;
+  \item Une amélioration de la qualité des services;
+  \item Un bon suivi des ventes, des dettes et du stock;
+  \item Une optimisation des achats;
+  \item Un gain en temps de reponse.
+\end{itemize}
+   
+\subsection{Périmètre du projet}
+
+\begin{itemize}
+  \item L'application vise toutes les boutiques désirant numériser leur système de gestion.
+  \item Le site sera disponible en français uniquement.
+  \item L'ensemble des fonctionnalités seront accessibles depuis un mobile ou un desktop.
+\end{itemize}
+
+
+\newpage
+
+\section{Spécification des besoins}
+
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+Etant la première phase dans le cycle de developpement de toute application, cette phase consiste à comprendre le contexte du système.
+\newline Nous allons ainsi dans un premier temps extraire les besoins fonctionnels et les besoins non fonctionnels. Nous allons ensuite determiné les acteurs les plus pertinents et identifier les cas
+d'utilisation initiaux
+
+\subsection{Les besoins fonctionnels}
+Les différentes fonctionnalités de l'application décomposées sous forme de modules générales sont:
+\begin{itemize}
+  \item Gestion des ventes
+  \item Gestion des dettes
+  \item Gestion de congés
+  \item Gestion de stock
+  \item Gestion de personnel
+\end{itemize}
+
+\subsection{Les besoins non fonctionnels}
+Les besoins non fonctionnels décrivent toutes les exigences internes afin de garantir un bon fonctionnement du système. Pour notre application, nous avons dégagé les besoins non fonctionnels suivants:
+\newline
+\newline \textbf{La sécurité :} Le système doit fournir le niveau de sécurité souhaité. Une fois la session détruite, l'auteur aura besoin de se ré-authentifier
+\newline
+\newline \textbf{Fiabilité :} L'application doit fonctionner de façon cohérente sans erreurs et satisfaisante
+
+\subsection{Identification des acteurs}
+Après les analyses faites au niveau du service, et après l’extraction et l’étude des besoins fonctionnels attendus par le système, on peut distinguer 2 types d’acteurs:
+L'administrateur (responsable du service personnel) et le gérant (l'employé).
+
+\subsection{Diagramme de cas d'utilisation général}
+Le diagramme de cas d'utilisation représente la structure des grandes fonctionnalités du système.
+\newline
+\begin{figure}[ht]
+\centering
+\includegraphics[width=15cm, height=9cm]{UCG}
+\caption{Diagramme de cas d'utilisation général}
+\end{figure}
+\newline
+\newline Dans ce qui suit, nous expliquerons de façon detaillée chaque cas d'utilisation.
+
+\subsubsection{Analyse du cas d'utilisation: gestion des ventes}
+La figure ci-dessous représente le cas d'utilisation gestion des ventes.
+\newpage
+\begin{figure}[ht]
+\includegraphics[width=15cm, height=9cm]{venteUC}
+\caption{Diagramme de cas d'utilisation: gestion des ventes} 
+\end{figure}
+\begin{itemize}
+  \item \textbf{Scénario du cas d’utilisation « gestion des ventes » :} 
+\end{itemize}
+Le tableau suivant résume les scénarii réalisés par les acteurs identifiés au niveau du cas
+d’utilisation « gestion des ventes » ;
+\newline
+\newline
+\begin{tabular}{|r|l|} \hline
+\textbf{Acteurs} & Gérant\\ \hline
+\textbf{Objectif} & \begin{minipage}{0.95\textwidth}
+  \textbf{La gestion des ventes donne la main au gérant de :}
+  \begin{itemize}
+    \item Consulter la liste des ventes
+    \item Modifier une vente
+    \item Supprimer une vente
+    \item Ajouter une vente
+    \item Imprimer la facture
+  \end{itemize}
+\end{minipage} \\ \hline
+\textbf{Précondition} & Authentification du gérant réussi et choix d'une opération \\ \hline
+\textbf{Postcondition} & Opération finalisée et validée \\ \hline
+\textbf{Scénario nominal} & \begin{minipage}{0.95\textwidth}
+  \begin{enumerate}
+    \item Le gerant s'authentifie au système et accède à son espace
+    \item Il choisit l'option en rapport avec les ventes
+    \item Il effectue ses opérations et quitte
+\end{enumerate}
+\end{minipage} \\ \hline
+\end{tabular}
+
+
+\subsubsection{Analyse du cas d'utilisation: gestion des dettes}
+La figure ci-dessous représente le cas d'utilisation gestion des dettes.
+\newpage
+\begin{figure}[ht]
+\includegraphics[width=15cm, height=9cm]{detteUC}
+\caption{Diagramme de cas d'utilisation: gestion des dettes} 
+\end{figure}
+\begin{itemize}
+  \item \textbf{Scénario du cas d’utilisation « gestion des dettes » :} 
+\end{itemize}
+Le tableau suivant résume les scénarii réalisés par les acteurs identifiés au niveau du cas
+d’utilisation « gestion des dettes » ;
+\newline
+\newline
+\begin{tabular}{|r|l|} \hline
+\textbf{Acteurs} & Gérant\\ \hline
+\textbf{Objectif} & \begin{minipage}{0.95\textwidth}
+  \textbf{La gestion des ventes donne la main au gérant de :}
+  \begin{itemize}
+    \item Octroyer une dette
+    \item Enrégitrer une dette reglée
+    \item Consulter la liste des dettes
+  \end{itemize}
+\end{minipage} \\ \hline
+\textbf{Précondition} & Authentification du gérant réussi et choix d'une opération \\ \hline
+\textbf{Postcondition} & Opération finalisée et validée \\ \hline
+\textbf{Scénario nominal} & \begin{minipage}{0.95\textwidth}
+  \begin{enumerate}
+    \item Le gerant s'authentifie au système et accède à son espace
+    \item Il choisit l'option en rapport avec les dettes
+    \item Il effectue ses opérations et quitte
+\end{enumerate}
+\end{minipage} \\ \hline
+\end{tabular}
+
+\subsubsection{Analyse du cas d'utilisation: gestion des congés}
+La figure ci-dessous représente le cas d'utilisation gestion des congés.
+\newpage
+\begin{figure}[ht]
+\includegraphics[width=15cm, height=9cm]{congeUC}
+\caption{Diagramme de cas d'utilisation: gestion des congés} 
+\end{figure}
+\begin{itemize}
+  \item \textbf{Scénario du cas d’utilisation « gestion des congés » :} 
+\end{itemize}
+Le tableau suivant résume les scénarii réalisés par les acteurs identifiés au niveau du cas d’utilisation « gestion des congés » ;
+\newline
+\newline
+\begin{tabular}{|r|l|} \hline
+\textbf{Acteurs} & Gérant et administrateur\\ \hline
+\textbf{Objectif} & \begin{minipage}{0.95\textwidth}
+  \textbf{La gestion des ventes donne la main à l'administrateur de :}
+  \begin{itemize}
+    \item Consulter la liste des congés
+    \item Modifier/mettre à jour un congé
+    \item Supprimer un congé
+    \item Ajouter un nouveau congé
+  \end{itemize}
+  \textbf{Et au gerant de :}
+  \begin{itemize}
+    \item Consulter la liste des congés
+    \item Suivre ses congés 
+  \end{itemize}
+\end{minipage} \\ \hline
+\textbf{Précondition} & Authentification de l'utilisateur réussi et choix d'une opération \\ \hline
+\textbf{Postcondition} & Opération finalisée et validée \\ \hline
+\textbf{Scénario nominal} & \begin{minipage}{0.95\textwidth}
+  \begin{enumerate}
+    \item L'utilisateur s'authentifie au système et accède à son espace
+    \item Il choisit l'option en rapport avec les congés
+    \item Il effectue ses opérations et quitte
+\end{enumerate}
+\end{minipage} \\ \hline
+\end{tabular}
+
+
+\subsubsection{Analyse du cas d'utilisation: gestion des stock}
+La figure ci-dessous représente le cas d'utilisation gestion des stock.
+\newpage
+\begin{figure}[ht]
+\includegraphics[width=15cm, height=9cm]{stockUC}
+\caption{Diagramme de cas d'utilisation: gestion des stock} 
+\end{figure}
+\begin{itemize}
+  \item \textbf{Scénario du cas d’utilisation « gestion des stock » :} 
+\end{itemize}
+Le tableau suivant résume les scénarii réalisés par les acteurs identifiés au niveau du cas
+d’utilisation « gestion des stock » ;
+\newline
+\newline
+\begin{tabular}{|r|l|} \hline
+\textbf{Acteurs} & Gérant et administrateur\\ \hline
+\textbf{Objectif} & \begin{minipage}{0.95\textwidth}
+  \textbf{La gestion des ventes donne la main à l'administrateur de :}
+  \begin{itemize}
+    \item Gerer les entrées et sorties du stock
+    \item Planifier les livraisons
+    \item Suivre l'état du stock
+  \end{itemize}
+  \textbf{Et au gerant de :}
+  \begin{itemize}
+    \item Gerer les entrées et sorties du stock
+    \item Contrôler l'état du stock 
+  \end{itemize}
+\end{minipage} \\ \hline
+\textbf{Précondition} & Authentification de l'utilisateur réussi et choix d'une opération \\ \hline
+\textbf{Postcondition} & Opération finalisée et validée \\ \hline
+\textbf{Scénario nominal} & \begin{minipage}{0.95\textwidth}
+  \begin{enumerate}
+    \item L'utilisateur s'authentifie au système et accède à son espace
+    \item Il choisit l'option en rapport avec les congés
+    \item Il effectue ses opérations et quitte
+\end{enumerate}
+\end{minipage} \\ \hline
+\end{tabular}
+
+
+\end{document}
